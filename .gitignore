@@ -1,4 +1,7 @@
+# Can be retrieved via Plug.
+autoload/*
 plugged/*
 colors/*
+
 .netrwhist
 
