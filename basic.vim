@@ -20,6 +20,10 @@ set encoding=utf-8
 set directory=$HOME/.vim/swapfiles//
 set backupdir=$HOME/.vim/backup/
 
+if (!isdirectory($HOME .. '/.vim/swapfiles'))
+    call mkdir($HOME .. '/.vim/swapfiles')
+endif
+
 " Lines "
 set number
 set relativenumber

@@ -2,6 +2,7 @@
 autoload/*
 plugged/*
 colors/*
+swapfiles/*
 
 .netrwhist
 
