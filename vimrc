@@ -4,7 +4,10 @@ let configmodules = [
     \ '~/.vim/lsp.vim',           
     \ '~/.vim/asyncomplete.vim',  
     \ '~/.vim/fzf.vim',           
-    \ '~/.vim/cmake.vim'          
+    \ '~/.vim/cmake.vim',
+    \ '~/.vim/style.vim',
+    \ '~/.vim/termdebug.vim',
+    \ '~/.vim/fugitive.vim'
 \ ]
 
 for modulepath in configmodules

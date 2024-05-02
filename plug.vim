@@ -32,5 +32,11 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } | Plug 'junegunn/fzf.vim'
     Plug 'cdelledonne/vim-cmake'
     Plug 'tpope/vim-fugitive'
+
+    Plug 'jacoborus/tender.vim'
+    Plug 'morhetz/gruvbox'
+
+    Plug 'itchyny/lightline.vim'
+    Plug 'sheerun/vim-polyglot'
 call plug#end()
 

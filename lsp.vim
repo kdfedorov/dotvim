@@ -16,7 +16,14 @@ function! s:on_lsp_buffer_enabled() abort
     nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
 
     let g:lsp_format_sync_timeout = 1000
-    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+    let g:lsp_diagnostics_virtual_text_enabled = 1
+	let g:lsp_document_code_action_signs_enabled = 1
+	" TODO: Change to cool icon B) "let g:lsp_document_code_action_signs_hint = {'text': ''}
+    let g:lsp_diagnostics_float_cursor = 1
+    let g:lsp_diagnostics_float_insert_mode_enabled = 1
+    let g:lsp_diagnostics_echo_cursor = 1
+
+    "autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
 endfunction
 
 augroup lsp_install
